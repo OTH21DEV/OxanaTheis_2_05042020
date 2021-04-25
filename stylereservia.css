@@ -80,6 +80,15 @@ a
 
 /* Champs de recherche*/
 
+
+.champsrecherche
+{
+    display: flex;
+
+   align-items: center;
+  
+}
+
 .search
 {
     height: 30px;
@@ -101,87 +110,17 @@ a
    color: white;
 }
 
-.champsrecherche
-{
-    display: flex;
-    align-items: center;
-  
-}
-
-.fa-map-marker-alt /* Icone map pb d'alignement*/
-{
-    background-color: #F2F2F2;
-    
-    height: 30px;
-    width: 30px;
-    border-radius: 10px 0px 0px 10px;
-    text-align: center;
-
-}
-
-/* Filtres icones*/
-
-.fa-money-bill-wave-alt /* Icone pb d'alignement*/
+.map
 {
     
-    border-radius: 15px;
-    background-color:  #DEEBFF;
-    width: 30px;
-    height: 30px;
-    vertical-align: middle;
-    color:  #0065FC;
-    text-align: center;
-    margin-right: 5px;
-
-}
-
-.fa-child /* Icone pb d'alignement*/
-{
+border-radius: 10px 0px 0px 10px;
+background-color: #F2F2F2;
     
-    border-radius: 15px;
-    background-color:  #DEEBFF;
-    width: 30px;
-    height: 30px;
-    vertical-align:middle;
-    color:  #0065FC;
-    text-align: center;
-    margin-right: 5px;
-    
-}
-.fa-heart /* Icone pb d'alignement*/
-{
-    
-    border-radius: 15px;
-    background-color:  #DEEBFF;
-    width: 30px;
-    height: 30px;
-    vertical-align:middle;
-    color:  #0065FC;
-    text-align: center;
-    margin-right: 5px;
-    
-}
-.fa-dog /* Icone pb d'alignement*/
-{
-    
-    border-radius: 15px;
-    background-color:  #DEEBFF;
-    width: 30px;
-    height: 30px;
-    vertical-align:middle;
-    color:  #0065FC;
-    text-align: center;
-    margin-right: 5px;
-    
-}
-
-
-.fa-map-marker-alt fa-xs
-{
-    
-    border-radius: 10px 0px 0px 10px;
-    background-color: #F2F2F2;
-    padding-left: 30px;
+display:flex;
+justify-content:center;
+align-items:center;
+height: 30px;
+width: 30px;
   
    
 }
@@ -189,34 +128,55 @@ a
 
 /* Filtres navigation*/
 
-.filtre
+div.filtre
 {
     display: flex;
-    vertical-align: middle;
+    justify-content: flex-start;
+    align-items: center;
    
-    
 }
 ul.filtres
-
 {
     list-style-type: none;
-    display: flex;
- 
+    display: flex;   
 }
 
+.rondbleu
+{
+border-radius: 15px;
+background-color:  #DEEBFF;
+width: 30px;
+height: 30px;
+display:flex;
+justify-content:center;
+align-items:center;
+color:  #0065FC;
+margin-right: 10px;
+
+}
 ul.filtres li
+
 {
 border: 2px solid #F2F2F2;
 border-radius: 25px 20px 20px 25px;
-
-text-decoration: none;
-
 border-left: none;
-margin-right: 40px;
+margin-right: 70px;
 padding-right: 10px;
+text-decoration: none;
 
 }
 
+a.rondblue_titre
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+
+ 
 /* Icone info et titre*/
 
 
