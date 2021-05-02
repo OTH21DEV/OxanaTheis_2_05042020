@@ -27,7 +27,6 @@ header
 {
     display: flex;
     align-items: center;
-    flex-direction: row-reverse;
     justify-content: space-between;
     margin-bottom: 30px;
     
@@ -79,6 +78,9 @@ a
     color: #0065FC;
 }
 
+
+
+
 /*Titres*/
 
 div.titres{
@@ -92,6 +94,7 @@ div.titres h2{
     font-size: 0.8em;
     font-weight:200;
 }
+
 
 
 /* Champs de recherche*/
@@ -109,7 +112,7 @@ div.titres h2{
 {
     height: 40px;
     border: none;
-    border-bottom: 2px solid #F2F2F2;
+   border-bottom: 2px solid #F2F2F2;
     border-top: 2px solid #F2F2F2;
     padding-left: 15px;
 }
@@ -128,12 +131,13 @@ input::placeholder
    background-color: #0065FC;
    font-weight: bold;
    border-radius:0px 10px 10px 0px ;
-   border: 0px;
+  border: 0px;
    height: 40px;
    width: auto;
    color: white;
    padding-right: 10px;
    padding-left: 10px;
+   margin-left: -10px;
 }
 
 .map
@@ -149,6 +153,16 @@ height: 40px;
 width: 40px;
 
 }
+
+.loupe{
+    display: none;
+}
+/*
+input:focus{
+    outline: none;
+    }
+    */
+
 
 
 /* Filtres */
@@ -237,7 +251,6 @@ margin-left: 10px;
 
 }
 
-
  /*Flex pour hebergement et aside*/
 
 section.hebergements
@@ -262,7 +275,7 @@ aside
     
     background-color: #F2F2F2;
     width: 30% ;
-    height: 626px;
+    height:600px;
     border-radius: 20px;
     
 }
@@ -363,6 +376,7 @@ img.section_hebergements_img
   
 }
 
+
   /*Aside*/
 
   div.aside_element
@@ -448,6 +462,7 @@ span.star_gray
 {
     color:gray; 
 }
+
 
 /*section activité*/
 
@@ -555,7 +570,7 @@ img.activites_img_small
 footer
 {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     background-color: #F2F2F2;
     padding-top: 30px;
 
@@ -569,3 +584,292 @@ footer ul
    
 }
 
+/*Media */
+
+
+@media all and (max-device-width:480px)
+{
+    #bloc_page
+{
+    width: auto;
+    
+}
+}
+/*Header*/
+
+@media all and (max-device-width:480px)
+{
+
+div.logo{
+    margin-left: 20px;
+    
+}
+
+li.heb:nth-child(1){
+    order:2;
+
+}
+li.act:nth-child(2){
+    order:3;
+    
+  
+}
+li.ins:nth-child(3){
+   order: 1;
+  
+}
+
+
+   .menu_hebergements_border_top{
+       border-top: none;
+       border-bottom: 2px solid #0065FC;
+       border-width: 3px;
+       padding-bottom: 10px;
+      padding-left: 10px;
+      padding-right: 10px;
+      color: #0065FC;
+   }
+
+
+}
+/*Titres*/
+@media all and (max-device-width:480px){
+
+    div.titres h1{
+      
+     margin-left: 20px;
+      text-align:left;
+      margin-right: 30px;
+      line-height: 1.2;
+      font-size: 1.3em;
+      word-wrap: break-word;
+      width: auto;
+      
+    }
+    div.titres h2{
+    
+        text-align:left;
+      width: 350px;
+      margin-left: 20px;
+      font-size: 1em;
+      line-height: 1.3;
+      font-weight: 100;
+      opacity: 0.8;
+}
+}
+/* Champs de recherche*/
+
+@media all and (max-device-width:480px)
+{
+
+    .champsrecherche
+    {
+        margin-left: 20px;
+       
+    }
+
+ .loupe{
+     display: inline-block;
+ }
+ .button-text{
+     display: none;
+ }
+ .button{
+    border-radius:10px 10px 10px 10px ;
+    border: 0px;
+     height: 40px;
+     width: 40px;
+     margin-right: 10px;
+   
+ }
+
+}
+/* Filtres*/
+@media all and (max-device-width:480px){
+
+    div.filtre
+    {
+        
+        flex-direction: column;
+      
+       align-items: flex-start;
+     
+    
+    }
+    div.filtre h2{
+        margin-left: 20px;
+    }
+    ul.filtres
+    {
+        flex-direction: column;
+      align-items: flex-start;
+      max-height: 200px;
+      flex-wrap: wrap;
+      padding-left: 20px;
+      margin-bottom: 0%;
+      
+      
+     
+    }
+    ul.filtres li{
+        margin-bottom: 10px;
+       padding-left: 0%;
+       margin-right: 0%;
+      
+    }
+    
+    
+    li.eco:nth-child(1){
+    order: 1;
+    }
+    li.fam:nth-child(2){
+        order:4;
+      
+    }
+    li.rom:nth-child(3){
+        order:2;
+    }
+    li.anim:nth-child(4){
+        order:3;
+        
+    }
+    
+    }
+    
+/* Icone info et titre*/
+
+@media all and (max-device-width:480px){
+    div.info{
+        margin-left: 20px;
+        width: 380px;
+      
+    }
+    .info_titre{
+        text-align: left;
+        word-wrap:break-word ;
+        display: inline-block;
+        width: 300px;
+        font-size: 0.8em;
+        opacity: 0.8;
+        vertical-align: top;
+        padding-top: 8px;
+        
+    }
+    }
+    
+    /*Section Hebergements*/
+    @media all and (max-device-width:480px){
+
+        div.section_hebergements_element1 {
+            flex-direction: column;
+            margin-bottom: 0%;
+        }
+    
+        div.section_hebergements_element2{
+            flex-direction: column;
+        }
+        div.section_hebergements
+        {
+            background-color: white;
+            width: 100%;
+            height: auto;
+         
+          
+        }
+        img.section_hebergements_img{
+            width: 310px;
+            height: 100px;
+        }
+        div.section_hebergements_element{
+            width: 320px;
+            height: 194px;
+            margin-bottom: 10px;
+           
+        box-shadow: 8px 8px 8px #f2f2f2;
+        }
+      
+    }
+
+    /*Aside*/
+
+    
+@media all and (max-device-width:480px){
+
+
+    section.hebergements{
+        flex-direction: column-reverse;
+    }
+aside{
+    width: auto;
+    border-radius: unset;
+}
+i.fa-chart-line{
+    margin-left: 110px;
+}
+
+
+}
+
+/*Section activités*/
+
+@media all and (max-device-width:480px){
+    section.activites{
+        flex-direction: column;
+    }
+
+    div.section_activites_element1{
+        flex-direction: column;
+        margin-left: 20px;
+    }
+
+    div.section_activites_element2{
+        flex-direction: column;
+        margin-left: 20px;
+        margin-top: 0px;
+}
+    
+
+    img.activites_img_xl, img.activites_img_medium, img.activites_img_xs, img.activites_img_small {
+        width: 320px;
+    height: 150px;
+    }
+    div.section_activites_element
+{
+  
+    width: 320px;
+    height: 194px;
+    margin-bottom: 15px;
+ 
+}
+div.element2_img_xl
+{
+    margin-left: 0px;
+  
+}
+#Activités
+{
+    
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 0px;
+  
+}
+section.activites h2{
+    margin-top: 10px;
+}
+
+
+    }
+    /*Footer*/
+
+    @media all and (max-device-width:480px){
+
+        footer{
+            flex-direction: column;
+       
+        }
+    div.a_propos, div.nos_hebergements, div.Assistance{
+        margin-left: 20px;
+    }
+    
+    }

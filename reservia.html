@@ -8,6 +8,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet"> 
 
         <script src="https://kit.fontawesome.com/4cf7099890.js" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 
         <title>Reservia</title>
     </head>
@@ -15,19 +17,19 @@
     <body>
         <div id="bloc_page">
             <header>
+        
+                     <div class="logo">
+                         <img src="logo/Reservia.svg" alt="Logo Reservia"/>
+                                                                                                                                                                                                                                                     
+                     </div>
 
-                <nav class="menu">
-                    <ul class="premiermenu">
-                        <li><a href="#Hebergement"><span class="menu_hebergements_border_top">Hébergements</span></a></li>
-                        <li><a href="#Activités"><span class="menu_activite">Activités</span></a></li>
-                        <li><span class="inscrire">S'inscrire</span></li>
-                    </ul>
-                </nav>   
-
-                <div class="logo">
-                    <img src="logo/Reservia.svg" alt="Logo Reservia"/>
-                                                                                                                                                                                                                                                                     
-                </div>
+                     <nav class="menu">
+                         <ul class="premiermenu">
+                            <li class="heb"><a href="#Hebergement"><span class="menu_hebergements_border_top">Hébergements</span></a></li>
+                             <li class="act"><a href="#Activités"><span class="menu_activite">Activités</span></a></li>
+                             <li class="ins"><span class="inscrire">S'inscrire</span></li>
+                         </ul>
+                      </nav>   
 
             </header>
 
@@ -42,8 +44,19 @@
                    <span class="map"><i class="fas fa-map-marker-alt" ></i></span> 
                     <form method="POST" action="traitement.php">
                     
-                    <p><input type="search" class="search" placeholder="Marseille, France"/>
-                        <input type="button" class="button" value="Rechercher"/></p>
+      
+
+                    <p class="champs"><input type="search" class="search" placeholder="Marseille, France"/>
+
+
+
+                        <button type="button" class="button"><span class="loupe"><i class="fas fa-search">
+
+                        </i></span>
+                            
+                            <span class="button-text">Rechercher</span></button>
+                           
+                    </p>
                     </form> 
               
                 </div>
@@ -55,14 +68,14 @@
                     <nav>
                         <ul class="filtres">
                             
-                        <li><a class="rondblue_titre" href="#"><span class="rondbleu"><i class="fas fa-money-bill-wave-alt"></i></span>Economique</a></li>
+                        <li class="eco"><a class="rondblue_titre" href="#"><span class="rondbleu"><i class="fas fa-money-bill-wave-alt"></i></span>Economique</a></li>
                             
-                        <li><a class="rondblue_titre" href="#"><span class="rondbleu"><i class="fas fa-child"></i></span>Familial</a></li>
+                        <li class="fam"><a class="rondblue_titre" href="#"><span class="rondbleu"><i class="fas fa-child"></i></span>Familial</a></li>
                             
-                        <li><a class="rondblue_titre" href="#"><span class="rondbleu"><i class="fas fa-heart"></i></span>Romantique</a></li>
+                        <li class="rom"><a class="rondblue_titre" href="#"><span class="rondbleu"><i class="fas fa-heart"></i></span>Romantique</a></li>
                          
                             
-                        <li><a class="rondblue_titre" href="#"><span class="rondbleu"><i class="fas fa-dog"></i></span>Animaux autorisés</a></li>
+                        <li class="anim"><a class="rondblue_titre" href="#"><span class="rondbleu"><i class="fas fa-dog"></i></span>Animaux autorisés</a></li>
 
                         </ul>
                     </nav>
@@ -73,7 +86,7 @@
                 <div class="info">
            
                     <h3><i class="fas fa-info fa-xs"></i>
-                    <span class="info_titre"> Plus de 500 logements disponibles dans cette ville</span></h3>
+                    <span class="info_titre"> Plus de 500 logements sont disponibles dans cette ville</span></h3>
 
                  </div>
 
@@ -328,6 +341,10 @@
                         </div>
                 </section>
 
+                </div>
+
+            </div>
+            
             <footer>
                 <div class="a_propos">
                     <h2>A propos</h2>
@@ -361,8 +378,5 @@
                         <li><a href="#">Nous contacter</a</li>
                     </ul>
 
-                </div>
-            </footer>
-            </div>
-            
+        </footer>
     </body>
