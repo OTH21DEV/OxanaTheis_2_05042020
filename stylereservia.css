@@ -9,14 +9,18 @@ font-family: 'Raleway', sans-serif;
 body
 {
     font-family: 'Raleway';
+    width: auto;
+    margin: 0;
+    padding: 0;
   
 }
 
 
 #bloc_page
 {
-    width: 1200px;
-    margin: auto;
+    width: 100%;
+    margin-left: 20px;
+    
 }
 
 
@@ -26,12 +30,18 @@ header
 
 {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+   align-items: center;
+  justify-content: space-between;
     margin-bottom: 30px;
     
 }
 
+
+.testmenu{
+    display: flex;
+    justify-content: flex-end;
+    align-items:baseline;
+}
 
    ul.premiermenu
 
@@ -72,10 +82,13 @@ a
 }
 
 
-.inscrire
+.ins 
 {
     font-weight:bold;
     color: #0065FC;
+    
+  
+   
 }
 
 
@@ -252,48 +265,70 @@ section.hebergements
 display: flex;
 }
 
-/*Section hebergements et aside*/
+/*Section hebergements */
 
-div.section_hebergements
+
+.section_hebergements
 {
     background-color:#F2F2F2;
-    width: 70%;
+    width: 75%;
     height: 626px;
     border-radius: 20px;
     margin-right: 40px;
+   
+}
+
+.section_hebergements_container{
+display: flex;
+ flex-wrap: wrap;
+  
+ justify-content: space-between;
+ padding-left: 20px;
+
+ 
+
+}
+.section_hebergements_element /*img+titre*/
+
+{
+    border: thin #ffffff;
+    width:80%;
+    margin-left: 20px;
+  
+    background-color:white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.image
+{
+    width:97%;
+}
+.section_hebergements_img{
+    width: 100%;
+    height: 116px;
+    object-fit:cover;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-top-left-radius:20px;
+    border-top-right-radius: 20px;
   
 }
-
-aside
-{
-    
-    background-color: #F2F2F2;
-    width: 30% ;
-    height:626 rese  px;
-    border-radius: 20px;
-    
+.element_container{
+  flex-basis: 33%;
+ 
+}
+.titre_img {
+    margin-left: 13px;
+    line-height: 0.8;
+    width: 100%;
+    padding-bottom: 10px;
+    height: auto;
 }
 
-
-/*Flex pour premier container de 3 img*/
-
-div.section_hebergements_element1 
-
-{
-display: flex;
-   
-margin-top: 20px;
-margin-bottom: 30px;
-   
-}
-
-/*Flex pour deuxieme container de 3 img*/
-div.section_hebergements_element2
-{
-    display: flex;
-    justify-content: space-around;
-    
-}
 #Hebergement 
 {
 font-size:x-large;
@@ -308,32 +343,7 @@ margin-left: 20px;
     margin-left: 20px;
    
 }
-/*Img + texte/bordure*/
 
-div.section_hebergements_element
-{
-    border: thin white;
-  
-  
-  width: 230px;
-    height: 210px;
-   
-   
-    margin-left: 20px;
-    margin-right: 20px;
-  
-    
-    background-color:white;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-
-  
-}
-div.titre_img {
-    margin-left: 13px;
-    line-height: 0.8;
-}
 div.section_hebergements_element h2
 {
     font-size: medium;
@@ -351,30 +361,27 @@ div.section_hebergements_element h3
 }
 
 /*img*/
-img.section_hebergements_img
-{
- 
-   width: 220px;
-    height: 116px;
- 
-  
-    object-fit: cover;
-    
-    padding-top: 5px;
-    padding-left: 5px;
-    padding-right: 5px;
-   
-  
-    border-top-left-radius:20px;
-    border-top-right-radius: 20px;
-  
-}
 
 
   /*Aside*/
+  
+aside
+{
+    
+    background-color: #F2F2F2;
+    width: 30% ;
+    height: 626px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 60px;
+    padding-left: 20px;
+    
+}
 
   div.aside_element
 {
+   
     border: 2px thin white;
     background-color:white;
     border-radius:20px;
@@ -392,12 +399,20 @@ img.section_hebergements_img
     text-align: left;
    
     display: flex;
-    
+ /*   width: 100%;*/
+}
+
+.taille_aside_element{
+ /*   width: 90%;*/
+    margin-right: 20px;
 }
 
 div.aside_element h2
 {
-    font-size: medium;
+    font-size: 0.9em;
+    width: 80%;
+   
+   
    
    
 }
@@ -405,42 +420,43 @@ div.aside_element h3
 {
     font-size: small;
     font-weight: 200;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
 }
 
-aside
-{
-    display: flex;
-    flex-direction: column;
+.image_aside{
+    width:45%;
 }
 
-img.aside_img
+.aside_img
 {
-
-
-        width: 105px;
-        height: 135px;
-     
-        margin-right: 10px;
-        border-top-left-radius: 20px;
-        border-bottom-left-radius: 20px;
-        
-        margin-top: 2px;
-        margin-bottom: 2px;
-       
-      
-        padding-top: 2px;
-      object-fit: cover;
+width: 100%;
+height: 135px;
+margin-right: 10px;
+border-top-left-radius: 20px;
+border-bottom-left-radius: 20px;
+margin-top: 2px;
+margin-bottom: 2px;
+padding-top: 2px;
+object-fit: cover;
  
        
 }
+.titre_img_aside{
+    width: 100%;
+    padding-left: 10px;
+    height: auto;
+}
+
 .titre_aside{
     font-size: large;
   
     margin-left: 20px;
     margin-top: 20px;
-   
-    
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-right: 50px;
+
     
 }
 .fa-chart-line
@@ -467,12 +483,37 @@ span.star_gray
     margin-top: 50px;
     margin-bottom: 10px;
 }
-section.activites
+.activites
 {
 display: flex;
+width: 100%;
 
 
 }
+div.section_activites_element1
+{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    height: 500px;
+}
+
+div.section_activites_element2
+
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 500px;
+    width: 50%;
+    margin-top: 20px;
+    margin-right: -20px;
+    
+}
+
+
 section.activites h2
 {
 font-size: small;
@@ -481,28 +522,14 @@ margin-top: 5px;
 padding-bottom: 10px;
 
 }
-div.section_activites_element1
-{
-    display: flex;
-    max-width: 50%;
-    margin-top: 20px;
-}
 
-div.section_activites_element2
-
-{
-    display: flex;
-    max-width: 50%;
-    margin-top: 20px;
-    
-}
 div.element2_img_xl
 {
     margin-left: 10px;
   
 }
 
-div.section_activites_element
+.section_activites_element
 {
     border: 2px thin #F2F2F2;
     background-color:white;
@@ -510,13 +537,18 @@ div.section_activites_element
     box-shadow: 8px 8px 8px #F2F2F2;
     margin-right: 30px;
     margin-bottom: 50px;
-   
+  
    
 }
-img.activites_img_xl
+.taille_element{
+    width: 45%;
+}
+
+.activites_img_xl
 
 {
-    width: 275px;
+    width: 100%;
+   /* width: 275px;*/
     height: 392px;
     object-fit: cover;
    border-top-left-radius: 20px;
@@ -528,7 +560,8 @@ img.activites_img_xl
 img.activites_img_medium
 
 {
-    width: 275px;
+ /*   width: 275px;*/
+ width: 100%;
     height: 182px;
     object-fit: cover;
     border-top-left-radius: 20px;
@@ -536,7 +569,8 @@ img.activites_img_medium
 }
 img.activites_img_xs
 {
-    width: 275px;
+  /*  width: 275px;*/
+  width: 100%;
     height: 124px;
     object-fit: cover;
     border-top-left-radius: 20px;
@@ -545,7 +579,8 @@ img.activites_img_xs
 
 img.activites_img_small
 {
-    width: 275px;
+ /*   width: 275px;*/
+ width: 100%;
     height: 152px;
     object-fit: cover;
     border-top-left-radius: 20px;
@@ -569,8 +604,8 @@ img.activites_img_small
  #bloc_footer{
      display: flex;
      justify-content: space-between;
-     width: 1200px;
-     margin: auto;
+     width: 100%;
+    padding-left: 40px;
  }
  #bloc_footer ul{
     list-style-type: none;
@@ -584,71 +619,89 @@ img.activites_img_small
 /*Media */
 
 
-@media all and (max-device-width:480px)
-{
-    #bloc_page
-{
-    width: auto;
-    
-}
-}
+
+
 /*Header*/
 
 @media all and (max-device-width:480px){
 
+    #bloc_page{
+        margin-left: 0;}
+
 header{
-flex-wrap: wrap;
-justify-content: space-between;
-padding-top: 0%;
+    flex-direction: column;
+    align-items: flex-start;
 }
+    
+    
 
+    .testmenu{
+        flex-wrap: wrap;
+      
+        align-items:flex-start;
 
-
-
-ul.premiermenu{
-    flex-wrap: wrap;
-    justify-content: space-between;
-
+    }
+  
+   
+    
 
     
-}
+
 div.logo{
     margin-left: 20px;
+    justify-content: flex-start;
+    width: 20%;
+    position: absolute;
+    margin-top: 20px;
+    
+    
 }
 
-li.heb:nth-child(1){
+
+nav.menu:nth-child(1){
     order:2;
-    flex: 1 1 200px;
+    width: 100%;
+    align-items: flex-start;
+
+}
+.ins:nth-child(2){
+    
+    order: 1;
+    margin-top: 35px;
+   
 
 
 }
-li.act:nth-child(2){
-    order: 3;
-    flex: 1 1 200px;
+
+ul.premiermenu{
+    
+justify-content: space-between;
+padding-left: 0;
+
+
 }
- 
-  
-
-li.ins:nth-child(3){
-   order: 1;
-   flex: 1 1 400px;
+.menu_activite{
+    border-top: none;
+    border-bottom: 2px solid gray;
+    border-width: 3px;
+    padding-bottom: 10px;
+   padding-left: 40px;
+   padding-right: 30px;
+   
 }
-
-
-
 
    .menu_hebergements_border_top{
        border-top: none;
        border-bottom: 2px solid #0065FC;
        border-width: 3px;
        padding-bottom: 10px;
-      padding-left: 10px;
-      padding-right: 10px;
+      padding-left: 40px;
+      padding-right: 30px;
       color: #0065FC;
-   }
+   }}
 
 
-}
+
 /*Titres*/
 @media all and (max-device-width:480px){
 
@@ -757,15 +810,15 @@ li.ins:nth-child(3){
 
 @media all and (max-device-width:480px){
     div.info{
-        margin-left: 20px;
-        width: 380px;
+        padding-left: 20px;
+        width: 100%;
       
     }
     .info_titre{
         text-align: left;
         word-wrap:break-word ;
         display: inline-block;
-        width: 300px;
+        width: 75%;
         font-size: 0.8em;
         opacity: 0.8;
         vertical-align: top;
@@ -777,14 +830,12 @@ li.ins:nth-child(3){
     /*Section Hebergements*/
     @media all and (max-device-width:480px){
 
-        div.section_hebergements_element1 {
+        .section_hebergements_container{
             flex-direction: column;
             margin-bottom: 0%;
         }
     
-        div.section_hebergements_element2{
-            flex-direction: column;
-        }
+       
         div.section_hebergements
         {
             background-color: white;
@@ -793,18 +844,12 @@ li.ins:nth-child(3){
          
           
         }
-        img.section_hebergements_img{
-            width: 310px;
-            height: 100px;
-        }
         div.section_hebergements_element{
-            width: 320px;
-            height: 194px;
+           
             margin-bottom: 10px;
            
         box-shadow: 8px 8px 8px #f2f2f2;
         }
-      
     }
 
     /*Aside*/
@@ -817,54 +862,63 @@ li.ins:nth-child(3){
         flex-direction: column-reverse;
     }
 aside{
-    width: auto;
+    width: 100%;
     border-radius: unset;
+    padding-left: 0%;
 }
 i.fa-chart-line{
-    margin-left: 110px;
+    margin-left: 80px;
 }
 img.aside_img
 {
-width: 110px;
+width: 110px;}
 
-}}
+.taille_aside_element{
+margin-right: 0;
+}
+
+}
 
 /*Section activités*/
 
 @media all and (max-device-width:480px){
     section.activites{
         flex-direction: column;
+      
     }
 
     div.section_activites_element1{
         flex-direction: column;
+        flex-wrap: nowrap;
+        height: auto;
         margin-left: 20px;
+        width: 100%;
+        
+     
     }
 
     div.section_activites_element2{
         flex-direction: column;
+        flex-wrap: nowrap;
+        height: auto;
         margin-left: 20px;
         margin-top: 0px;
+        width: 100%;
+      
 }
-    
+    .taille_element{
+        height: 194px;
+        width: 90%;
+        margin-bottom: 15px;
+    }
 
     img.activites_img_xl, img.activites_img_medium, img.activites_img_xs, img.activites_img_small {
-        width: 320px;
+   
     height: 150px;
     }
-    div.section_activites_element
-{
-  
-    width: 320px;
-    height: 194px;
-    margin-bottom: 15px;
- 
-}
-div.element2_img_xl
-{
-    margin-left: 0px;
-  
-}
+    
+
+
 #Activités
 {
     
@@ -886,6 +940,7 @@ section.activites h2{
 
         #bloc_footer{
             flex-direction: column;
+            padding-left: 0;
        
         }
     div.a_propos, div.nos_hebergements, div.Assistance{
@@ -898,13 +953,31 @@ section.activites h2{
 
     /*Header*/
 
-    @media all and (min-device-width:768px)and (max-device-width:1024px){
+    @media all and (min-device-width:768px)and (max-device-width:980px){
+    
+        #bloc_page
+    {
+        width: auto;
+        
+    }
+    }
 
-header{
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-}
+    @media all and (min-device-width:768px)and (max-device-width:980px){
+/*
+        header{
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+
+        */
+        header{
+          
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+
+
 ul.premiermenu{
     padding-left: 0px;
     margin-top: 20px;
@@ -1043,20 +1116,22 @@ div.section_hebergements{
   
     flex-wrap: wrap;
     height: 650px;
-    width:400px;
+    width:420px;
     justify-content: flex-start;
     margin-right: 0%;
     background-color: white;
   
+
 }
+
     img.section_hebergements_img{
-        width: 160px;
+        width: 200px;
         height: 100px;
     }
     div.section_hebergements_element{
-        width: 170px;
-        height: 174px;
-      
+        width: 210px;
+        height: 190px;
+     
         margin-bottom: 10px;
         margin-right: 0%;
         box-shadow: 8px 8px 8px #f2f2f2;
@@ -1084,7 +1159,7 @@ div.section_hebergements_element2{
     justify-content: flex-start;
     flex-direction: column;
     width: 200px;
-  margin-left: -20px;
+ 
    
     
 }
@@ -1099,6 +1174,7 @@ div.section_hebergements_element1{
   margin-left: -10px;
     margin-top: 0px;
     margin-bottom: 0px;
+    margin-right: 20px;
    
     
     
@@ -1115,7 +1191,7 @@ img.aside_img
 }
 
 aside{
-    width: 29%;
+ width: 350px;
     margin-left: 10px;
     margin-right: 10px;
 
@@ -1167,7 +1243,7 @@ div.aside_element{
         margin-left: -20px;
        
 }
-    
+    /*
 
     img.activites_img_xl, img.activites_img_medium, img.activites_img_xs, img.activites_img_small {
         width: 170px;
@@ -1180,7 +1256,21 @@ div.aside_element{
     height: 174px;
     margin-bottom: 18px;
  
+}*/
+
+
+img.activites_img_xl, img.activites_img_medium, img.activites_img_xs, img.activites_img_small {
+    width: 340px;
+height: 234px;
 }
+div.section_activites_element
+{
+
+width: 340px;
+height: 274px;
+margin-bottom: 18px;
+}
+
 div.element2_img_xl
 {
     margin-left: 0px;
@@ -1213,6 +1303,8 @@ div.a_propos, div.nos_hebergements, div.Assistance{
 footer{
   
     padding-top: 10px;
+    width: auto;
+ 
    
  }
 
@@ -1224,8 +1316,8 @@ footer{
 
  #bloc_footer{
     
-     justify-content: space-between;
-     width: 370px;
+
+     width: 350px;
      margin-right: 0%;
      margin-left: 0%;
 
