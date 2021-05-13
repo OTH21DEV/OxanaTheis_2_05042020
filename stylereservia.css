@@ -303,8 +303,17 @@ aside{
 .aside_element h3{
     font-size: 0.8em;
     font-weight: 200;
-  margin-bottom: 35px;}
+  }
 
+  .premier_img{
+      padding-bottom: 40px;
+  }
+  .deuxieme_img{
+    padding-bottom: 25px;
+}
+.troisieme_img{
+    padding-bottom: 40px;
+}
 .image_aside{
     width:45%;}
 
@@ -441,6 +450,30 @@ footer ul{
 
 
 /*Media */
+
+@media all and (min-width:1172px)and (max-width:1462px){
+
+
+.premier_img{
+    padding-bottom: 30px;
+}
+
+.troisieme_img{
+  padding-bottom: 30px;
+}}
+
+@media all and (min-width:990px)and (max-width:1172px){
+    .premier_img{
+        padding-bottom: 10px;
+    }
+    .deuxieme_img{
+        padding-bottom: 0px
+        
+    }
+    .troisieme_img{
+      padding-bottom: 20px;
+    }}
+    
 
 /*Header*/
 
@@ -635,6 +668,8 @@ padding-left:0;}
         .taille_aside_element{
         margin-right: 0;}
 
+    
+
 /*Section activités*/
 
 section.activites{
@@ -757,6 +792,13 @@ img.activites_img_xl, img.activites_img_medium, img.activites_img_xs, img.activi
 .taille_element{
     width: 100%;}
 
+    .premier_img{
+        padding-bottom: 30px;
+    }
+    
+    .troisieme_img{
+      padding-bottom: 30px;
+    }
 
  /*Footer*/
     
