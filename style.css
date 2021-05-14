@@ -56,24 +56,28 @@ a{
 
 .ins {
     font-weight:bold;
-    color: #0065FC;}
+    color: #0065FC;
+margin-right: 20px;}
 
 .logo{
     padding-left: 20px; }
 
 /*Titres*/
 
+main{
+padding: 0 20px;
+}
 .titres{
     line-height: 0.8em;}
 
 .titres h1{
     font-size: 1.2em;
-    padding-left: 20px;}
+}
 
 .titres h2{
     font-size: 0.8em;
     font-weight:200;
-    padding-left: 20px;}
+}
 
 /* Champs de recherche*/
 
@@ -116,7 +120,7 @@ justify-content:center;
 align-items:center;
 height: 40px;
 width: 40px;
-margin-left: 20px;}
+}
 
 .loupe{
     display: none;}
@@ -128,7 +132,7 @@ margin-left: 20px;}
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding-left: 20px;}
+}
 
 .filtres{
     list-style-type: none;
@@ -147,7 +151,7 @@ margin-right: 10px;}
 
 .filtres li {
 border: 2px solid #F2F2F2;
-border-radius: 25px 20px 20px 25px;
+border-radius: 30px;
 border-left: none;
 margin-right: 30px;
 padding-right: 15px;
@@ -167,9 +171,6 @@ font-weight: bold;}
 
 
 /* Icone info et titre*/
-
-.info{
-    padding-left: 20px;}
 
 .fa-info{
 
@@ -194,7 +195,7 @@ margin-left: 10px;}
 
 section.hebergements{
 display: flex;
-margin-left: 20px;}
+}
 
 
 /*Section hebergements */
@@ -202,7 +203,7 @@ margin-left: 20px;}
 .section_hebergements{
     background-color:#F2F2F2;
     width: 68%;
-    height: 626px;
+    height: 600px;
     border-radius: 20px;
     margin-right: 40px;}
    
@@ -210,12 +211,11 @@ margin-left: 20px;}
 display: flex;
  flex-wrap: wrap;
  justify-content: space-between;
- padding-left: 20px;}
+ padding:0 20px;}
 
 .section_hebergements_element /*img+titre*/{
 
-    width:80%;
-    margin-left: 20px;
+    width:92%;
     background-color:white;
     border-radius: 20px;
     display: flex;
@@ -227,7 +227,7 @@ display: flex;
 
 .section_hebergements_img{
     width: 100%;
-    height: 116px;
+    height: 110px;
     object-fit:cover;
     padding-top: 5px;
     padding-left: 5px;
@@ -236,7 +236,10 @@ display: flex;
     border-top-right-radius: 20px;}
 
 .element_container{
-  flex-basis: 33%;}
+  flex-basis: 33%;
+display: flex;
+align-items: center;
+justify-content: center;}
 
 .titre_img {
     margin-left: 13px;
@@ -251,8 +254,9 @@ margin-top: 40px;
 margin-left: 20px;}
 
 .titre_afficher{
-    font-size: 0.6em;
-    padding-left: 20px;}
+    font-size: 0.9em;
+    padding-left: 30px;
+margin-bottom: 0;}
 
 .section_hebergements_element h2{
     font-size: 0.8em;}
@@ -266,16 +270,33 @@ margin-left: 20px;}
 
 
   /*Aside*/
+
+.titre_ligne{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px ;
+}
+
   
 aside{
     
     background-color: #F2F2F2;
     width: 25% ;
-    height: 626px;
+    height: 600px;
     border-radius: 20px;
+    padding:0 30px;
     display: flex;
     flex-direction: column;
-    padding-left: 20px;}
+   
+}
+   .test{
+    display: flex;
+    flex-direction: column;
+   justify-content: space-between;
+   height: 480px;
+  
+   }
 
 .aside_element{
    
@@ -283,42 +304,24 @@ aside{
     border-radius:20px;
     border-top-right-radius: 20px; 
     padding-left: 5px;
-    padding-right: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 5px;
-    margin-bottom: 20px;
     text-align: left;
     display: flex;}
 
-.taille_aside_element{
-
-    margin-right: 20px;}
-
 .aside_element h2{
     font-size: 0.8em;
-    width: 80%;}
+    }
 
 .aside_element h3{
     font-size: 0.8em;
     font-weight: 200;
   }
 
-  .premier_img{
-      padding-bottom: 40px;
-  }
-  .deuxieme_img{
-    padding-bottom: 25px;
-}
-.troisieme_img{
-    padding-bottom: 40px;
-}
 .image_aside{
-    width:45%;}
+    width:35%;}
 
 .aside_img{
 width: 100%;
-height: 135px;
+height: 128px;
 margin-right: 10px;
 border-top-left-radius: 20px;
 border-bottom-left-radius: 20px;
@@ -330,18 +333,32 @@ object-fit: cover;}
 .titre_img_aside{
     width: 100%;
     padding-left: 10px;
-    height: auto;}
+    height: auto;
+    
+}
+.titre_img_aside h2{
+margin-top: 0;}
+
+
+.titre_star{
+
+    display: flex;
+    flex-direction: column;
+   justify-content: space-around;
+}
+
+.aside_star{
+    padding-left: 10px;
+ 
+}
 
 .titre_aside{
     font-size:1em;
-    margin-left: 20px;
     margin-top: 20px;
    display: flex;
    align-items: center;
-   justify-content: space-between;}
-
-.fa-chart-line{
-   padding-right: 30px;}
+   justify-content: space-between;
+}
 
 .star{
     color: #0065FC; }
@@ -355,13 +372,13 @@ object-fit: cover;}
 
 #Activités{
     font-size: 1.2em;
-    margin-top: 50px;
+    margin-top: 40px;
     margin-bottom: 10px;
-    padding-left: 20px;
 }
 .activites{
 display: flex;
-padding-left: 20px;}
+justify-content: space-between;
+}
 
 .section_activites_element1{
     display: flex;
@@ -369,7 +386,9 @@ padding-left: 20px;}
     width: 50%;
     margin-top: 20px;
     flex-wrap: wrap;
-    height: 500px;}
+    height: 500px;
+   
+}
 
 .section_activites_element2{
     display: flex;
@@ -378,7 +397,8 @@ padding-left: 20px;}
     height: 500px;
     width: 50%;
     margin-top: 20px;
-    margin-right: -20px;}
+  /*align-items: flex-end;*/
+    }
 
 .activites h2{
 font-size: small;
@@ -394,7 +414,6 @@ padding-bottom: 10px;}
     background-color:white;
     border-radius: 20px;
     box-shadow: 8px 8px 8px #F2F2F2;
-    margin-right: 30px;
     margin-bottom: 50px;}
 
 .taille_element{
@@ -436,8 +455,7 @@ footer{
     background-color: #F2F2F2;
     padding-top: 30px;
     display: flex;
-    justify-content: space-between;
-   padding-left: 40px;}
+   padding-left: 20px;}
 
  footer h2,ul{
      font-size: 0.9em;}
@@ -447,32 +465,12 @@ footer ul{
     padding: 0%;
     line-height: 1.8; }
 
-
-/*Media */
-
-@media all and (min-width:1172px)and (max-width:1462px){
-
-
-.premier_img{
-    padding-bottom: 30px;
+.a_propos, .nos_hebergements, .Assistance{
+    padding-right: 20%;
 }
 
-.troisieme_img{
-  padding-bottom: 30px;
-}}
 
-@media all and (min-width:990px)and (max-width:1172px){
-    .premier_img{
-        padding-bottom: 10px;
-    }
-    .deuxieme_img{
-        padding-bottom: 0px
-        
-    }
-    .troisieme_img{
-      padding-bottom: 20px;
-    }}
-    
+/*Media */
 
 /*Header*/
 
