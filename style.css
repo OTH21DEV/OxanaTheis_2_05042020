@@ -205,7 +205,7 @@ display: flex;
     width: 68%;
     height: 600px;
     border-radius: 20px;
-    margin-right: 40px;}
+    margin-right: 2%;}
    
 .section_hebergements_container{
 display: flex;
@@ -282,7 +282,7 @@ margin-bottom: 0;}
 aside{
     
     background-color: #F2F2F2;
-    width: 25% ;
+    width: 30% ;
     height: 600px;
     border-radius: 20px;
     padding:0 30px;
@@ -471,8 +471,14 @@ footer ul{
 
 /*Header*/
 
-@media all and (max-device-width:480px){
+@media all and (max-width:480px){
 
+    main{
+        padding: 0;
+    }
+#Hebergement{
+    margin-left: 0;
+}
 header{
     flex-direction: column;
     align-items: flex-start;}
@@ -498,7 +504,7 @@ header{
     
     order: 1;
     margin-top: 35px;
-    padding-right: 40px;}
+    }
 
 .premiermenu li.heb{
     padding-right: 0%;}
@@ -536,14 +542,17 @@ color: #0065FC;}
 
 /*Titres*/
 
+.titres{
+    padding-left: 20px;
+}
 
 .titres h1{
       
 margin-left: 0px;
 line-height: 1.2;
 font-size: 1.3em;
-width: 80%;
-text-align: justify;}
+width: 95%;
+}
     
 .titres h2{
     
@@ -553,6 +562,10 @@ font-weight: 100;
 opacity: 0.8;}
 
 /* Champs de recherche*/
+
+.champsrecherche{
+    padding-left: 20px;
+}
 
 .loupe{
      display: inline-block;}
@@ -571,17 +584,20 @@ opacity: 0.8;}
         
     flex-direction: column;
     align-items: flex-start;
-    padding-left: 0;}
+    padding-left: 20px;}
 
-.filtre h2{
-        margin-left: 20px;}
+    ul {
+        padding:0;
+  
+    }
+  
 
 .filtres{
         flex-direction: column;
       align-items: flex-start;
       max-height: 200px;
       flex-wrap: wrap;
-      padding-left: 20px;
+
       margin-bottom: 0%;}
 
 .filtres li{
@@ -604,103 +620,101 @@ opacity: 0.8;}
     
 /* Icone info et titre*/
 
-    .info{
-        padding-left: 20px;}
+   .info{
+       padding-left: 20px;
+   }
 
     .info_titre{
         text-align: left;
-        word-wrap:break-word ;
         display: inline-block;
-        width: 79%;
+        width: 80%;
         font-size: 0.8em;
         opacity: 0.8;
         vertical-align: top;
-        padding-top: 8px;}
+        padding-top: 8px;
+        }
     
     /*Section Hebergements*/
 
+#Hebergement{
+    margin-left: 20px;
+}
+
 .section_hebergements_container{
-        flex-direction: column;
-        margin-bottom: 0%;
-    width: 100%;
-padding-left:0;}
+    flex-direction: column;
+     margin-bottom: 0%;
+    padding:0;
+}
   
 .section_hebergements{
         background-color: white;
         width: 100%;
         height: auto;
-        margin-right: 0;}
+        }
 
-.element_container{
-        padding-left: 20px;}
+.titre_afficher{
+    padding: 20px;
+}
 
 .section_hebergements_element{
         margin-bottom: 10px; 
         box-shadow: 8px 8px 8px #f2f2f2;
-        width: 94%;
         margin-left: 0;}
 
-    /*Aside*/
 
 
-  section.hebergements{
-        flex-direction: column-reverse;
-        margin-left: 0;}
-        
-        aside{
-            width: 100%;
-            border-radius: unset;
-            padding-left: 0%;}
-        
-        i.fa-chart-line{
-            margin-left: 80px;}
-        
-        .aside_img{
-        width: 110px;}
-        
-        
-        .taille_aside_element{
-        margin-right: 0;}
+/*Aside*/
 
+
+section.hebergements{
+    flex-direction: column-reverse;
+    margin-left: 0;}
+        
+aside{
+    width: 100%;
+    border-radius: unset;
+    padding: 0%;}
+
+.test, .titre_ligne{
+    padding: 0 20px;
+    }
     
 
 /*Section activités*/
+
+#Activités{
+
+    margin: 10px 0 20px 20px;
+    }
+
+.activites{
+    height: auto;
+}
 
 section.activites{
     flex-direction: column;
     padding-left: 0;}
     
-.section_activites_element{
-   margin-right: 10px;
-}
+
 .section_activites_element1{
     flex-direction: column;
     flex-wrap: nowrap;
     height: auto;
     width: 100%;}
 
-.section_activites_element2{
-    flex-direction: column;
-    flex-wrap: nowrap;
-    height: auto;
-    margin-top: 0px;
-    width: 100%;}
-
+.div_taille_element{
+    padding: 0 20px;
+    width: auto;
+}
 .taille_element{
     height: 194px;
-    width: 90%;
-    padding-left: 25px;
+    width: 89%;
+    padding-left: 20px;
     margin-bottom: 15px;}
 
 .activites_img_xl, .activites_img_medium, .activites_img_xs, .activites_img_small {
 
 height: 150px;}
-
-
-#Activités{
-
-margin-top: 10px;
-margin-bottom: 0px;}
 
 .activites h2{
 margin-top: 10px;}
@@ -715,14 +729,19 @@ footer{
     padding-left: 20px;}}
     
 
+
+
     /*Tablette*/
 
- @media all and (min-device-width:768px)and (max-device-width:980px){
+ @media all and (min-width:768px)and (max-width:980px){
 
    /*header*/
 
    .header_menu{
        padding-right: 20px;
+   }
+   .ins{
+       margin-right: 0;
    }
 /* Titre*/
 
@@ -739,6 +758,9 @@ opacity: 0.8;}
 a.rondblue_titre{
 font-size: 0.8em;}
 
+.filtres{
+    padding-left: 20px;
+}
 
 /* Icone info et titre*/
 
@@ -753,48 +775,80 @@ section.hebergements{
 flex-direction: column;}
 
 .section_hebergements{
-    width: 97%;}
+    width: 100%;}
 
 .section_hebergements_container{
     padding-left: 10px;}
+    .image{
+        width: 95.5%;
+    }
 
 /*Aside*/
 
 aside{
-    width: 97%;
-    padding-left: 0;
-    margin-right: 20px;
+    width: 100%;
     margin-top: 20px;
+    padding: 0;
 }
+.test{
+    padding: 0 20px;
+}
+.titre_ligne{
+    padding: 0 20px;
+}
+
 .titre_img_aside{
-    width: 25%;}
+    width: 100%;}
 
 
+    /*Activités*/
+
+.activites{
+    height: auto;
+}
 .section_activites_element1{
        height: auto;}
 
-.section_activites_element2{
-        height: auto;}
+.div_taille_element{
+    width: 100%;
+}
 
+.fa-chart-line{
+    font-size: 1.3em;
+}
 
 img.activites_img_xl, img.activites_img_medium, img.activites_img_xs, img.activites_img_small {
-
-
 
  height: 210px;}
 
 .taille_element{
     width: 100%;}
 
-    .premier_img{
-        padding-bottom: 30px;
-    }
-    
-    .troisieme_img{
-      padding-bottom: 30px;
-    }
-
+ 
  /*Footer*/
     
  footer{
-padding-left: 25px}}
+
+display: flex;
+justify-content: space-between;
+padding-right: 20px;
+}
+.a_propos, .nos_hebergements, .Assistance{
+    padding-right: 0;}}
+
+@media all and (min-width:981px)and (max-width:1200px){
+.image{
+        width: 95%;}
+.a_propos, .nos_hebergements, .Assistance{
+            padding-right: 10%;}}
+    
+@media all and (min-width:1201px)and (max-width:1400px){
+        .image{   
+            width: 95.5%;
+        }}
+    
+ @media all and (min-width:1201px)and (max-width:1400px){
+            .image{   
+    width: 96.5%;
+            }}
+            
